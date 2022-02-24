@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+label{
+    font-size: 16px;  
+}
+input:visited {
+  color: rgb(8, 8, 10);
+  font-size: 100%;
+  width: 100%;
+  padding: 20px 20px 20px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+button:hover{
+  border-radius: 10px;
+  font-size: 100%;
+  opacity: 1;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: #555555;
+  color: white;
+}
+
+button{
+    border-radius: 10px;
+    background-color: #272b27;
+    color: aliceblue;
+
+}
+</style>
+</head>
+<body style="background-color: rgb(169, 216, 200); padding: auto;" >
+        <h1 align="center" >REGISTRATION FORM</h1>
+       <table align="center">
+           <tr>
+               <td><label>Username :</label></td>
+               <td><input type="text" id="names"required></td>
+           </tr>
+           <tr>
+               <td> <label>Password :</label></td>
+               <td> <input type="password" pattern="[a-zA-Z0-9{6-10}]" placeholder="Should have atleast 6 characters" id="password"required></td>
+           </tr>
+           <tr>
+               <td> <label>E Mail id :</label></td>
+               <td> <input type="text" pattern="[@gmail.com{1}]" placeholder="Should follow name@gmail.com format"id="email"required></td>
+           </tr>
+           <tr>
+            <td> <label>Phone No:</label></td>
+            <td> <input type="text" id="number"required></td>
+        </tr>
+       <tr>
+           <td> <label>Gender :</label></td>
+           <td> female<input type="radio" id="male" name="kk">
+            male<input type="radio" id="female" name="kk"></td>
+       </tr>
+     <tr>
+         <td><label>Languages :</label></td>
+         <td> English <input type="checkbox" id="eng">
+            Telugu <input type="checkbox" id="tel">
+            Hindi <input type="checkbox" id="hin">
+            Tamil <input type="checkbox" id="tamil"></td>
+     </tr>
+     <tr>
+        <td><label>Address :</label></td>
+        <td>
+            <input type="text" name="Address" id="Address"required>
+        </td>
+    </tr>
+<tr>
+  <td colspan="4"style="align-content:center"> <br><button id="btn">Register</button></td>
+</tr>
+</table>
+</body>
+</html>
+
